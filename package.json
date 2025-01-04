@@ -1,0 +1,39 @@
+{
+  "name": "agents",
+  "version": "1.0.0",
+  "description": "",
+  "module": "src/index.ts",
+  "type": "module",
+  "license": "ISC",
+  "sideEffects": false,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format:check": "prettier --check \"**/*.{js,ts,tsx,md,mdx}\"",
+    "format:fix": "prettier --write \"**/*.{js,ts,tsx,md,mdx}\"",
+    "lint": "eslint \"./**/*.ts*\"",
+    "build": "tsup",
+    "build:watch": "tsup --watch",
+    "type-check": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://sdk.vercel.ai/docs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plura-ai/agents.git"
+  },
+  "bugs": {
+    "url": "https://github.com/plura-ai/agents/issues"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
